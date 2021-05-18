@@ -2,6 +2,9 @@ import { Component } from '@angular/core';
 
 import { products } from '../products';
 
+// console.log("products");
+// console.log(JSON.stringify(products));
+
 @Component({
   selector: 'app-product-list',
   templateUrl: './product-list.component.html',
@@ -10,11 +13,14 @@ import { products } from '../products';
 export class ProductListComponent {
   products = products;
 
+  productsAsString() {
+    return JSON.stringify(products);
+  }
+
   share() {
     window.alert('The product has been shared!');
   }
 }
-
 
 /*
 Copyright Google LLC. All Rights Reserved.

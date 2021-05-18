@@ -1,5 +1,11 @@
 <h2>Products</h2>
+<div *ngFor="let product of products">
+  <p>{{product.id}}: {{ product.name }}, price: {{product.price}}</p>
+</div>
 
+<!-- {{ productsAsString() }} -->
+
+<!-- <h3>Look at our great products!!</h3> -->
 
 <!-- 
 Copyright Google LLC. All Rights Reserved.
