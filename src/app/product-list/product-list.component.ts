@@ -11,9 +11,9 @@ import { products, shoes, Product } from '../products';
   styleUrls: ['./product-list.component.css']
 })
 export class ProductListComponent {
-  // products = products.concat(shoes);
+  products = products.concat(shoes);
 
-  products: Array<Product> = products.concat(shoes);
+  // products: Array<Product> = products.concat(shoes);
 
   productsAsString() {
     return JSON.stringify(products);

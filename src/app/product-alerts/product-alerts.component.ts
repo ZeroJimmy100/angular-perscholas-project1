@@ -4,6 +4,12 @@ import { Input } from '@angular/core';
 
 // import { Product } from '../products';
 
+const awesomeProduct = {
+  id: 1,
+  name: "nike",
+  price: 5
+};
+
 import { Product, products } from '../products';
 
 @Component({

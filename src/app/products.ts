@@ -5,28 +5,7 @@ export interface Product {
   description?: string;
 }
 
-export const products: Array<Product> = [
-  {
-    id: 1,
-    name: 'Phone XL',
-    price: 799,
-    description: 'A large phone with one of the best screens'
-  },
-  {
-    id: 2,
-    name: 'Phone Mini',
-    price: 699,
-    description: 'A great phone with one of the best cameras'
-  },
-  {
-    id: 3,
-    name: 'Phone Standard',
-    price: 299,
-    description: ''
-  }
-];
-
-// export const products = [
+// export const products: Array<any> = [
 //   {
 //     id: 1,
 //     name: 'Phone XL',
@@ -46,6 +25,47 @@ export const products: Array<Product> = [
 //     description: ''
 //   }
 // ];
+// export const products: Array<Product> = [
+//   {
+//     id: 1,
+//     name: 'Phone XL',
+//     price: 799,
+//     description: 'A large phone with one of the best screens'
+//   },
+//   {
+//     id: 2,
+//     name: 'Phone Mini',
+//     price: 699,
+//     description: 'A great phone with one of the best cameras'
+//   },
+//   {
+//     id: 3,
+//     name: 'Phone Standard',
+//     price: 299,
+//     description: ''
+//   }
+// ];
+
+export const products = [
+  {
+    id: 1,
+    name: 'Phone XL',
+    price: 799,
+    description: 'A large phone with one of the best screens'
+  },
+  {
+    id: 2,
+    name: 'Phone Mini',
+    price: 699,
+    description: 'A great phone with one of the best cameras'
+  },
+  {
+    id: 3,
+    name: 'Phone Standard',
+    price: 299,
+    description: ''
+  }
+];
 
 export const shoes = [
   {
