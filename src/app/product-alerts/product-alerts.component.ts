@@ -23,7 +23,7 @@ export class ProductAlertsComponent implements OnInit {
 
   notifyMe(myProduct) {
     window.alert(
-      `notify me for ${myProduct.name} for the price of ${myProduct.price}`
+      `notify me for ${myProduct.name} for the price of $${myProduct.price}`
     );
   }
 
