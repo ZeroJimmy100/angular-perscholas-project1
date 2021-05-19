@@ -71,7 +71,7 @@ export const shoes = [
   {
     id: 4,
     name: 'Nike',
-    price: 700,
+    price: 300,
     description: 'Nike shoes'
   },
   {
@@ -81,6 +81,8 @@ export const shoes = [
     description: 'Adidas shoes'
   }
 ];
+
+export const notifyPrice = 500;
 
 /*
 Copyright Google LLC. All Rights Reserved.

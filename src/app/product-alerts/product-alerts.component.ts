@@ -10,7 +10,7 @@ const awesomeProduct = {
   price: 5
 };
 
-import { Product, products } from '../products';
+import { Product, products, notifyPrice } from '../products';
 
 @Component({
   selector: 'app-product-alerts',
@@ -24,6 +24,8 @@ export class ProductAlertsComponent implements OnInit {
   notifyMe() {
     window.alert('Hello');
   }
+
+  notifyPrice = notifyPrice;
 
   constructor() {}
 
