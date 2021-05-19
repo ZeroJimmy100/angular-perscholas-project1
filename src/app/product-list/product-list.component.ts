@@ -23,6 +23,12 @@ export class ProductListComponent {
     window.alert('The product has been shared!');
   }
 
+  onNotify(myProduct) {
+    window.alert(
+      `notify me for ${myProduct.name} for the price of $${myProduct.price}`
+    );
+  }
+
   sayHello(productName: string) {
     return productName + ' details';
   }

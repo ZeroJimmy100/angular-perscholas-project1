@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 
-import { Input } from '@angular/core';
+import { Input, Output, EventEmitter } from '@angular/core';
 
 // import { Product } from '../products';
 
@@ -20,12 +20,7 @@ import { Product, products, notifyPrice } from '../products';
 export class ProductAlertsComponent implements OnInit {
   // product: Product = myProduct;
   @Input() product!: Product;
-
-  notifyMe(myProduct) {
-    window.alert(
-      `notify me for ${myProduct.name} for the price of $${myProduct.price}`
-    );
-  }
+  @Output() notify = new EventEmitter();
 
   notifyPrice = notifyPrice;
 
