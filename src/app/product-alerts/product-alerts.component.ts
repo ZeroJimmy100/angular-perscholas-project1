@@ -6,7 +6,7 @@ import { Input } from '@angular/core';
 
 const awesomeProduct = {
   id: 1,
-  name: "nike",
+  name: 'nike',
   price: 5
 };
 
@@ -20,6 +20,10 @@ import { Product, products } from '../products';
 export class ProductAlertsComponent implements OnInit {
   // product: Product = myProduct;
   @Input() product!: Product;
+
+  notifyMe() {
+    window.alert('Hello');
+  }
 
   constructor() {}
 
