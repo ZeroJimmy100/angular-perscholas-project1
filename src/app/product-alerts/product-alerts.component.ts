@@ -21,8 +21,10 @@ export class ProductAlertsComponent implements OnInit {
   // product: Product = myProduct;
   @Input() product!: Product;
 
-  notifyMe() {
-    window.alert('Hello');
+  notifyMe(myProduct) {
+    window.alert(
+      `notify me for ${myProduct.name} for the price of ${myProduct.price}`
+    );
   }
 
   notifyPrice = notifyPrice;
