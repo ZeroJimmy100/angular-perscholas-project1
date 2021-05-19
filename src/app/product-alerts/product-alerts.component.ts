@@ -13,7 +13,7 @@ import { Product, products } from '../products';
 })
 export class ProductAlertsComponent implements OnInit {
   // product: Product = myProduct;
-  // @Input() product!: Product;
+  @Input() product!: Product;
 
   constructor() {}
 
