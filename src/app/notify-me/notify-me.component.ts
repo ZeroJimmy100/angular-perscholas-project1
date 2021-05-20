@@ -1,5 +1,6 @@
 import { Component, OnInit, Input } from '@angular/core';
 import { Product, products } from '../products';
+import { Router, ActivatedRoute, ParamMap } from '@angular/router';
 
 const prices = [100, 200, 300, 400, 500, 600, 700];
 
@@ -9,10 +10,10 @@ const prices = [100, 200, 300, 400, 500, 600, 700];
   styleUrls: ['./notify-me.component.css']
 })
 export class NotifyMeComponent implements OnInit {
-  constructor() {}
-
-  prices = prices;
+  constructor(private route: ActivatedRoute) {}
+  product;
   products = products;
+  prices = prices;
   email = '';
   notifyPrice;
 
@@ -26,18 +27,20 @@ export class NotifyMeComponent implements OnInit {
   }
 
   notifyUserItem() {
-    let listOfItems = '';
-    for (let i = 0; i < this.products.length; i++) {
-      if (this.notifyPrice < products[i].price) {
-        listOfItems += products[i].name + ' ' + '\n';
-      }
-    }
     window.alert(
-      `You will be notified at ${this.email} when price of ${listOfItems} is ${
-        this.notifyPrice
-      }`
+      `You will be notified at ${this.email} when price of ${
+        this.product.name
+      } is ${this.notifyPrice}`
     );
   }
 
-  ngOnInit() {}
+  ngOnInit() {
+    //   this.route.queryParams.subscribe(params => {
+    //   this.productId = params['productId'];
+    // });
+    const routeParams = this.route.snapshot.paramMap;
+    const leProductId = Number(routeParams.get('productId'));
+
+    this.product = products.find(product => product.id === leProductId);
+  }
 }

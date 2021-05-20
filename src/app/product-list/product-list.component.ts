@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 
 import { products, Product } from '../products';
+import { Router, ActivatedRoute, ParamMap } from '@angular/router';
 
 // console.log("products");
 // console.log(JSON.stringify(products));

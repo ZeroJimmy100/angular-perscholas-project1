@@ -30,7 +30,7 @@ import { NotifyMeComponent } from './notify-me/notify-me.component';
         component: AboutComponent
       },
       {
-        path: 'notify-me',
+        path: 'notify-me/:productId',
         component: NotifyMeComponent
       }
     ])
