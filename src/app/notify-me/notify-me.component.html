@@ -1,18 +1,24 @@
 <h1>Notify me when ...</h1>
-<form>
+<form ng-submit="notifyUserItem()">
   <table>
     <tr>
       <td>
-        <select name="notifyMePrice" id="notifyMePrice">
-          <option value="100">$100</option>
-          <option value="200">$200</option>
-          <option value="300">$300</option>
-          <option value="400">$400</option>
-          <option value="500">$500</option>
-          <option value="600">$600</option>
-          <option value="700">$700</option>
-        </select>
+        <label style="display: inline-block;">Notify Price: </label>
+        <select (change)="notifyAlert($event)" name="notifyMePrice" id="notifyMePrice">
+          <option *ngFor="let price of prices" [ngValue]="price">${{ price }}</option>
+          </select>
       </td>
     </tr>
+    <tr>
+      <td>
+        <label style="display: inline-block;">Email: </label>
+        <input type="email" name="email" (keyup)="onKey($event)"/>
+      </td>
+    </tr>
+    <td>
+      <tr>
+        <button type="submit">Submit</button>
+      </tr>
+    </td>
   </table>
 </form>

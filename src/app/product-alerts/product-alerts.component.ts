@@ -21,7 +21,6 @@ export class ProductAlertsComponent implements OnInit {
   // product: Product = myProduct;
   @Input() product!: Product;
   @Output() notify = new EventEmitter();
-
   notifyPrice = notifyPrice;
 
   constructor() {}
