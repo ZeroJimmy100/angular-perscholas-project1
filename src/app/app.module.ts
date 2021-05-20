@@ -10,6 +10,7 @@ import { ProductAlertsComponent } from './product-alerts/product-alerts.componen
 import { WelcomeComponent } from './welcome/welcome.component';
 import { AboutComponent } from './about/about.component';
 import { RenameProductComponent } from './rename-product/rename-product.component';
+import { NotifyMeComponent } from './notify-me/notify-me.component';
 
 @NgModule({
   imports: [
@@ -27,6 +28,10 @@ import { RenameProductComponent } from './rename-product/rename-product.componen
       {
         path: 'about-page',
         component: AboutComponent
+      },
+      {
+        path: 'notify-me',
+        component: NotifyMeComponent
       }
     ])
   ],
@@ -37,7 +42,8 @@ import { RenameProductComponent } from './rename-product/rename-product.componen
     ProductAlertsComponent,
     WelcomeComponent,
     AboutComponent,
-    RenameProductComponent
+    RenameProductComponent,
+    NotifyMeComponent
   ],
   bootstrap: [AppComponent]
 })
