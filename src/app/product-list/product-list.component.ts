@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 
-import { products, shoes, Product } from '../products';
+import { products, Product } from '../products';
 
 // console.log("products");
 // console.log(JSON.stringify(products));
@@ -11,7 +11,9 @@ import { products, shoes, Product } from '../products';
   styleUrls: ['./product-list.component.css']
 })
 export class ProductListComponent {
-  products = products.concat(shoes);
+  // products = products.concat(shoes);
+
+  productsOfList = products;
 
   // products: Array<Product> = products.concat(shoes);
 

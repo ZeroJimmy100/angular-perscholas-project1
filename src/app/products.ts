@@ -68,20 +68,22 @@ export const products: Array<any> = [
 //   }
 // ];
 
-export const shoes = [
-  {
-    id: 4,
-    name: 'Nike',
-    price: 300,
-    description: 'Nike shoes'
-  },
-  {
-    id: 5,
-    name: 'Adidas',
-    price: 700,
-    description: 'Adidas shoes'
-  }
-];
+// export const shoes = [
+//   {
+//     id: 4,
+//     name: 'Nike',
+//     price: 300,
+//     description: 'Nike shoes'
+//   },
+//   {
+//     id: 5,
+//     name: 'Adidas',
+//     price: 700,
+//     description: 'Adidas shoes'
+//   }
+// ];
+
+export const addList = [];
 
 export const notifyPrice = 500;
 

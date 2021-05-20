@@ -9,6 +9,7 @@ import { ProductListComponent } from './product-list/product-list.component';
 import { ProductAlertsComponent } from './product-alerts/product-alerts.component';
 import { WelcomeComponent } from './welcome/welcome.component';
 import { AboutComponent } from './about/about.component';
+import { RenameProductComponent } from './rename-product/rename-product.component';
 
 @NgModule({
   imports: [
@@ -35,7 +36,8 @@ import { AboutComponent } from './about/about.component';
     ProductListComponent,
     ProductAlertsComponent,
     WelcomeComponent,
-    AboutComponent
+    AboutComponent,
+    RenameProductComponent
   ],
   bootstrap: [AppComponent]
 })
